@@ -21,7 +21,9 @@ def promotion():
 @app.route('/image_mars')
 def image_mars():
     return f'''<head><title>Привет, Марс!</title></head>
-    <img src="{url_for('static', filename='img/MARS.jpg')}" alt="У меня работает">'''
+    <h1>Жди нас, Марс!</h1>
+    <img src="{url_for('static', filename='img/MARS.jpg')}" alt="У меня работает">
+    <p>Марс</p>'''
 
 
 if __name__ == '__main__':
