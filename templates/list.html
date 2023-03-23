@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    {% if list == "ol"%}
+        <h2>Список профессий</h2>
+        <ol>
+        {% for i in profs %}
+            <li>{{ profs[loop.index0] }}</li>
+        {% endfor %}
+        </ol>
+
+    {% elif list == 'ul' %}
+        <h2>Список профессий</h2>
+        <ul>
+        {% for i in profs %}
+            <li>{{ profs[loop.index0] }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <h2>Ошибка! Неправильный запрос.</h2>
+    {% endif %}
+{% endblock %}
