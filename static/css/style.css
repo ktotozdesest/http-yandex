@@ -1,0 +1,12 @@
+.grey {
+    color: #ccc;
+}
+
+li.list-answer {
+     list-style-type: none;
+}
+
+ul.list-answer {
+    margin-left: 20px;
+    padding-left: 20px;
+}
