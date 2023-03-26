@@ -10,3 +10,11 @@ ul.list-answer {
     margin-left: 20px;
     padding-left: 20px;
 }
+
+.bordered {
+    margin-left: 30px;
+}
+
+strong.h {
+    font-size: 40px;
+}
