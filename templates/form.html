@@ -12,7 +12,10 @@
         {% for field in form if field.name != 'csrf_token' %}
             <div class="bordered">
                 {{ field.label() }}
+                <br>
                 {{ field() }}
+                <br>
+                <br>
                 {% for error in field.errors %}
                     <div class="error">{{ error }}</div>
                 {% endfor %}
