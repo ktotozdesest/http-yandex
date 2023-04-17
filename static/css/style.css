@@ -13,8 +13,34 @@ ul.list-answer {
 
 .bordered {
     margin-left: 30px;
+    text-align: center;
 }
 
 strong.h {
     font-size: 40px;
+}
+
+table, th, td {
+    border: 2px solid;
+    width: 100%;
+}
+
+td.female-adult {
+    background-color: #ff9218;
+}
+
+td.female-child {
+    background-color: #702963;
+}
+
+td.male-adult {
+    background-color: #1faee9;
+}
+
+td.male-child {
+    background-color: #d8a903;
+}
+
+td.error {
+    background-color: #d84b20;
 }
