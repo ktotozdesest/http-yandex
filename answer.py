@@ -58,5 +58,14 @@ def dist():
     return render_template('distribution.html', **param)
 
 
+@app.route('/table/<sex>/<age>')
+def table(sex, age):
+    param = {}
+    param['title'] = 'table'
+    param['sex'] = sex
+    param['age'] = int(age)
+    return render_template('table.html', **param)
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
