@@ -49,5 +49,14 @@ def login():
     return render_template('form.html', **param)
 
 
+@app.route('/distribution')
+def dist():
+    param = {}
+    param['title'] = 'dist'
+    param['team'] = ["cap", "cap's right hand", "cap's left hand", "cap's right hand's right hand",
+                     "cap's right hand's left hand", "cap's left hand's right hand", "cap's left hand's left hand"]
+    return render_template('distribution.html', **param)
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
