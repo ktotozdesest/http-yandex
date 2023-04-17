@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    {% set team_members = team %}
+    <div class="bordered">
+        <ul>
+            {% for i in team %}
+                <li class="list-answer">{{ team_members[loop.index0] }} - Каюта № {{ loop.index }} {% if loop.first %} - капитан корабля{% endif %}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
