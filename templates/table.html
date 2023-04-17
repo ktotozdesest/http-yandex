@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Oформление каюты</h2>
+    <table border="1">
+        <tr>
+            <td>Цвет</td><td>Инопришленец</td>
+        </tr>
+        <tr>
+            {% if sex == "female" %}
+                {% if age >= 21 %}
+                    <td class="female-adult"></td><td><img src="{{url_for('static', filename='img/MARS-2-9-adult.jpg')}}"></td>
+                {% else %}
+                    <td class="female-child"></td><td><img src="{{url_for('static', filename='img/MARS-2-9-child.jpg')}}"></td>
+                {% endif %}
+            {% elif sex == "male" %}
+                {% if age >= 21 %}
+                    <td class="male-adult"></td><td><img src="{{url_for('static', filename='img/MARS-2-9-adult.jpg')}}"></td>
+                {% else %}
+                    <td class="male-child"></td><td><img src="{{url_for('static', filename='img/MARS-2-9-child.jpg')}}"></td>
+                {% endif %}
+            {% else %}
+                <td class="error"></td><td><img src="{{url_for('static', filename='img/MARS-2-9-error.jpg')}}"></td>
+            {% endif %}
+        </tr>
+    </table>
+{% endblock %}
